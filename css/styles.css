@@ -310,8 +310,130 @@ cursor: pointer;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    fill: #000;
+      transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.close:hover,
+.close:focus {
+fill: var(--accent-color)
+}
+
+.modal-form-btn{
+  width: 448px;
+  /* outline: 1px solid tomato; */
+  margin-left: auto;
+  margin-right: auto;
+  padding:0px;
+
+}
+
+.modal-title {
+
+font-family: inherit;
+margin-top: 40px;
+margin-bottom: 12px;
+margin-left: 40px;
+margin-right: 40px;
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15px;
+text-align: center;
+
+color: #212121;
+}
+
+.form-field {
+  /* outline: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form-label {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-size: 12px;
+line-height: 1.16;
+/* identical to box height */
+letter-spacing: 0.01em;
+color: #757575;
+}
+
+.comment::placeholder {
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field .policy{
+font-size: 14px;
+line-height: 1.7
+}
+
+.form-field .policy .link {
+  color: #2196F3;
+}
+
+.modal-form-btn .form-btn {
+  margin-right: 115px;
+  margin-left: 115px;  
+  margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.form-field.checkbox {
+     display: inline-block;
+     margin-top: 25px; 
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.form-input {
+width: 448px;
+height: 40px;
+padding-left: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+cursor: pointer;
+ transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment {
+  width: 448px;
+height: 120px;
+
+border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.form-input:focus ~ .box-icon,
+ .form-input:hover ~ .box-icon{
+  fill: var(--accent-color);
+}
+
+.form-input:focus,
+.form-input:hover {
+  border: 1px solid var(--accent-color);
+
+}
+
+
+.form-field .box-icon
+{
+  position:absolute;
+  top:50%;
+  left: 12px;;
+   transform: translate(-50% -50%));
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline;
+  width: 20px;
+  height: 20px;
+
+}
 /*========Feature list========*/
 
 .section-feature {
@@ -492,7 +614,6 @@ color: rgba(255,255,255,1);
    justify-self: center;
    align-items: center;
 
-   
   transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1), fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

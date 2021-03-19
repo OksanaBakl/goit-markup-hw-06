@@ -53,10 +53,46 @@
             <button data-modal-open type="button" class="button current" >Заказать услугу</button>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <p> </p>
-                    <button data-modal-close class="close"><svg class="close-icon" Width="18px" Height="18px">
-                        <use href="./images/symbol-defs5.svg#close-black-18dp-2-1-1"></use>
-                    </svg></button>
+                    <h4 class="modal-title"> Оставьте свои данные, мы вам перезвоним</h4>
+                    <form class="modal-form">
+                    <div class="modal-form-btn">
+    <div class="form-field">
+        <label  class="form-label" for="name">Имя</label>
+
+        <input class="form-input" type="text" name="name" id="name" autofocus />
+                <svg class="box-icon">
+                        <use href="./images/symbol-defs5.svg#person-black-18dp-1"></use>
+                    </svg>
+    </div>
+    <div class="form-field">
+        <label  class="form-label" for="tel">Телефон</label>
+        <input class="form-input" type="tel" name="tel" id="tel" placeholder=" "/>
+                <svg class="box-icon" width="20" height="20">
+                    <use href="./images/symbol-defs5.svg#phone-black-18dp-1"></use>
+                </svg>
+    </div>
+    
+    <div class="form-field">
+        <label  class="form-label" for="mail">Почта</label>
+        <input class="form-input" type="email" name="mail" id="mail" />
+            <svg class="box-icon" width="20" height="20">
+                <use href="./images/symbol-defs5.svg#email-black-18dp-1"></use>
+            </svg>
+    </div>
+    <div class="form-field">
+        <label  class="form-label" for="comment">Kоментарий</label>
+        <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+    </div>
+    <div class="form-field checkbox">
+        <input  type="checkbox" name="policy" id="policy" />
+        <label  class="policy" for="policy">Соглашаюсь с рассылкой и принимаю <a class="policy link" href="">Условия договора</a> </label>
+    </div>
+        <button class="form-btn" type="submit">Отправить</button>
+        </div>
+        <button data-modal-close class="close"><svg class="close-icon" Width="18px" Height="18px">
+        <use href="./images/symbol-defs5.svg#close-black-18dp-2-1-1"></use>
+        </svg></button>
+</form>
                 </div>
             </div>
             
