@@ -65,6 +65,7 @@
                     </svg>
     </div>
     <div class="form-field">
+
         <label  class="form-label" for="tel">Телефон</label>
         <input class="form-input" type="tel" name="tel" id="tel" placeholder=" "/>
                 <svg class="box-icon" width="20" height="20">
@@ -83,12 +84,16 @@
         <label  class="form-label" for="comment">Kоментарий</label>
         <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
     </div>
-    <div class="form-field checkbox">
-        <input  type="checkbox" name="policy" id="policy" />
-        <label  class="policy" for="policy">Соглашаюсь с рассылкой и принимаю <a class="policy link" href="">Условия договора</a> </label>
-    </div>
+
+        <label class="field-checkbox">
+            <input class="checkbox" type="checkbox" name="topic" value="js" />
+            <span class="icon-checkbox "></span>
+            <span class="label">Соглашаюсь с рассылкой и принимаю <a class="policy link" href="">Условия договора</a></span>
+        </label>
+
         <button class="form-btn" type="submit">Отправить</button>
         </div>
+
         <button data-modal-close class="close"><svg class="close-icon" Width="18px" Height="18px">
         <use href="./images/symbol-defs5.svg#close-black-18dp-2-1-1"></use>
         </svg></button>
